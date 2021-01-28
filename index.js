@@ -13,5 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         throttle:500
     });
+    var modal = document.querySelectorAll('.modal');
+    var instancesModal = M.Modal.init(modal);
   });
 
