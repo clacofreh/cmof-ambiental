@@ -1,19 +1,25 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var parallax = document.querySelectorAll('.parallax');
-    var instancesParallax = M.Parallax.init(parallax);
-    var tapTarget = document.querySelectorAll('.tap-target');
-    var instancesTapTarget = M.TapTarget.init(tapTarget);
-    var slider = document.querySelectorAll('.slider');
-    var instancesSlider = M.Slider.init(slider,{
-        indicators: false,
-        height: 500
-    });
-    var scrollspy = document.querySelectorAll('.scrollspy');
-    var instancesParallax = M.ScrollSpy.init(scrollspy,{
-        
-        throttle:500
-    });
-    var modal = document.querySelectorAll('.modal');
-    var instancesModal = M.Modal.init(modal);
-  });
+const { urlencoded } = require('express');
+const express = require('express');
+const app = express();
+const path = require('path');
 
+
+
+app.post('/',(req,res,err)=>{
+    console.log(err)
+    console.log(req.body)
+    res.send('received')
+})
+
+
+app.use(express.urlencoded({extended: false }))
+
+
+
+app.use(express.static(path.join(__dirname, 'public')))
+
+
+
+app.listen(3000,()=>{
+    console.log('server')
+})

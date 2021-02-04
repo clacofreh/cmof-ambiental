@@ -1,0 +1,40 @@
+body {
+    background-color:#dcedc8  ;
+    font-family: 'Amatic SC', cursive;
+}
+.back-card{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#navbar{
+    font-family: 'Amatic SC', cursive;}
+#Logo{
+    font-family: 'Big Shoulders Display', cursive;
+}
+#que-hacemos{
+    margin-top: 10px;
+}
+#btn-ayuda{
+    
+    margin-bottom: 50px;
+}
+#como-ayudarnos{
+    margin-top: 0px;
+}
+.parallax-container {
+    height: 500;
+  }
+
+#porque{
+    background-color: #18220d;
+}
+
+
+
+.texto-entremedio{
+    margin-left: 50px;
+    margin-top:110px;
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+  }
